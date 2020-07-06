@@ -7,7 +7,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +20,8 @@ public class Chapter extends BottomSheetDialogFragment {
 
     EditText name,image;
     Button btnsave,btncancel,choseaudiobook;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
+    CollectionReference ref;
 
     @Nullable
     @Override
@@ -32,8 +38,21 @@ public class Chapter extends BottomSheetDialogFragment {
             @Override
             public void onClick(View v) {
 
-                AudioBookSelectPopUp bookSelectPopUp = new AudioBookSelectPopUp();
-                bookSelectPopUp.show(getFragmentManager(),"AudioBookSelectBook");
+
+ref=db.collection(getString(R.string.author_str));
+
+
+                ref.get().addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
+                    @Override
+                    public void onSuccess(QuerySnapshot queryDocumentSnapshots) {
+                                if (queryDocumentSnapshots.size()>0){
+                                    AudioBookSelectPopUp bookSelectPopUp = new AudioBookSelectPopUp();
+                                    bookSelectPopUp.show(getFragmentManager(),"AudioBookSelectBook");
+                                }
+
+                    }
+                });
+
 
             }
         });

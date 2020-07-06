@@ -58,7 +58,7 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     public void buAudioBook(View view) {
-        Intent intent = new Intent(getApplicationContext(),BookActivity.class);
+        Intent intent = new Intent(getApplicationContext(),AudioBookActivity.class);
         startActivity(intent);
     }
 }
