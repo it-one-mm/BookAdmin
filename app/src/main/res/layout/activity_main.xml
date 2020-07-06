@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.kevalpatel.passcodeview.PinView
+
+        android:id="@+id/pin_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:dividerColor="@color/colorPrimaryDark"
+        app:fingerprintDefaultText="Scan your finger to unlock application"
+        app:fingerprintEnable="false"
+        app:pin_titleText="Enter Your Pin"
+        app:fingerprintTextColor="@color/colorAccent"
+        app:fingerprintTextSize="@dimen/finger_print_text_size"
+        app:titleTextColor="@color/colorPrimary"/>
+
+
+</RelativeLayout>

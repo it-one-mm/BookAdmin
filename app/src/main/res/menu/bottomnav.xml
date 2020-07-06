@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pdfbooks"
+        android:title="Books"
+        android:icon="@drawable/ic_openbook"/>
+    <item
+        android:id="@+id/audiobooks"
+        android:icon="@drawable/ic_audiobook"
+        android:title="Audio Books"/>
+
+    <item
+        android:id="@+id/author_menu"
+        android:icon="@drawable/ic_author"
+        android:title="Author"/>
+    <item
+        android:id="@+id/category_men"
+        android:icon="@drawable/ic_category"
+        android:title="Category"/>
+</menu>

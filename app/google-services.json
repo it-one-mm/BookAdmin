@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "452225331339",
+    "firebase_url": "https://bookapp-fb569.firebaseio.com",
+    "project_id": "bookapp-fb569",
+    "storage_bucket": "bookapp-fb569.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452225331339:android:ce604ff15277e637b9648e",
+        "android_client_info": {
+          "package_name": "com.itonem.bookadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452225331339-bcjqovn4k11s77924gl22c4f777dle31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.itonem.bookadmin",
+            "certificate_hash": "bc21fbdff00b72677bdece00b00c2e7be23ee5b4"
+          }
+        },
+        {
+          "client_id": "452225331339-684abinkd0blf3hpqq3fj99b4rst1v2m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3J1znFcs_OZ0xHsA7WZ928FvDuYHMqAQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452225331339-684abinkd0blf3hpqq3fj99b4rst1v2m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="finger_print_text_size">14dp</dimen>
+    <dimen name="key_padding">5dp</dimen>
+    <dimen name="key_stroke_width">1dp</dimen>
+    <dimen name="key_text_size">16sp</dimen>
+    <dimen name="indicator_radius">5dp</dimen>
+    <dimen name="indicator_stroke_width">1dp</dimen>
+</resources>
